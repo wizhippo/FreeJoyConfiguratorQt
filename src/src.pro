@@ -173,7 +173,7 @@ linux {
 
 win32 {
     RC_FILE = winapp.rc
-    LIBS += -lhid -lsetupapi
+    LIBS += -lhid -lsetupapi -ldwmapi
     SOURCES += \
         windows/hidapi.c
 }

@@ -155,7 +155,7 @@ void Axes::updateAxisOut()
     ui->progressBar_Out->setValue(gEnv.pDeviceConfig->paramsReport.axis_data[m_axisNumber]);
 
     // a2b  axis_number_
-    ui->widget_A2bSlider->setAxisOutputValue(gEnv.pDeviceConfig->paramsReport.axis_data[m_axisNumber], m_outputEnabled);
+    ui->widget_A2bSlider->setAxisOutputValue(gEnv.pDeviceConfig->paramsReport.raw_axis_data[m_axisNumber], m_outputEnabled);
 }
 
 void Axes::outputValueChanged(bool isChecked)
